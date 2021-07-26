@@ -21,3 +21,6 @@
   - inside index.js add Route component with component `AddMovie` with path `/add-movie`.
   - remember to import `AddMovie` component from `src/components/AddMovie.js` into App.js
   - finally, go to `http://localhost:3000/add-movie` to see AddMovie component!
+
+
+- Next Goal: Create Header Footer base Layout and inserting props.children into the base layout Header and Footer.
