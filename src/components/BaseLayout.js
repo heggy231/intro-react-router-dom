@@ -4,7 +4,7 @@ const BaseLayout = (props) => {
   return (
     <>
       <header>BaseLayout Header</header>
-      <main>Content goes here!</main>
+      <main>{props.children}</main>
       <footer>BaseLayout Footer</footer>
     </>
   )
