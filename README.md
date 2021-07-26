@@ -108,3 +108,5 @@ const Menu = () => {
   <Route component={App} path="/" exact />
   <Route component={AddMovie} path="/add-movie" />
 ```
+
+## Goal: Breadcrumbs to go back to prev pg
