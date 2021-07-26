@@ -110,3 +110,36 @@ const Menu = () => {
 ```
 
 ## Goal: Breadcrumbs to go back to prev pg
+- Best time to get the :movieId is when the page is loaded Therefore, useEffect when componentDidMount.
+
+```jsx
+// inside of MovieDetail.js
+const MovieDetails = (props) => {
+  // useEffect to get access to `:movieId`
+  useEffect(() => {
+    console.log('props', props);
+    // props = { location: { pathname: "/movies/45" } 
+    //           match: { params: { movieId: "45" } } }
+  }, []);
+```
+
+```js
+// closer look of props obj, match.params.movieId = "45"
+props = { 
+  location: { pathname: "/movies/45" },
+  match: { params: { movieId: "45" }, 
+}
+
+// useEffect to get access to `:movieId`
+  useEffect(() => {
+    console.log('props', props);
+    console.log('movid id', props.match.params.movieId);
+    /**
+ * props = { 
+    location: { pathname: "/movies/45" },
+    match: { params: { movieId: "45" }, 
+  }
+  Therefore, when path is /movies/:movieId then we can access it using `props.match.params.movieId`
+*/
+  }, []);
+```
