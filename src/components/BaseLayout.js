@@ -1,9 +1,10 @@
 import React from 'react'
+import Menu from './Menu';
 
 const BaseLayout = (props) => {
   return (
     <>
-      <header>BaseLayout Header</header>
+      <Menu />
       <main>{props.children}</main>
       <footer>BaseLayout Footer</footer>
     </>
