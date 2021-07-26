@@ -12,8 +12,10 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <BaseLayout>
-        <Route component={App} path="/" exact />
-        <Route component={AddMovie} path="/add-movie" />
+        <Switch>
+          <Route component={App} path="/" exact />
+          <Route component={AddMovie} path="/add-movie" />
+        </Switch>
       </BaseLayout>
     </BrowserRouter>
   </React.StrictMode>,

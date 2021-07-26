@@ -24,3 +24,13 @@
 
 
 - Next Goal: Create Header Footer base Layout and inserting props.children into the base layout Header and Footer.
+
+```jsx
+  // **** `props.children` is what are nested inside of BaseLayout *****
+      <BrowserRouter>
+      <BaseLayout>
+        <Route component={App} path="/" exact />
+        <Route component={AddMovie} path="/add-movie" />
+      </BaseLayout>
+    </BrowserRouter>
+```
