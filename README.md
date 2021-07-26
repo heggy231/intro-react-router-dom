@@ -82,3 +82,29 @@ Q) Why we don't want SPA to refresh?
 
 - Anything we store in **local state will be gone** when page refreshes.
 - React is performant, all the page content is loaded when app begins.  Single page application.
+
+## making header menu clickable nav link
+
+```jsx
+// inside Menu.js)
+import { NavLink } from "react-router-dom";
+
+const Menu = () => {
+  return (
+    <>
+      <div id="menu">
+        <div>
+          <NavLink to="/">Home</NavLink>
+        </div>
+        <div>
+          <NavLink to="/add-movie">Add Movie</NavLink>
+        </div>
+      </div>
+    </>
+  );
+};
+
+// inside of index.js) *match what `path` here `to` nav link
+  <Route component={App} path="/" exact />
+  <Route component={AddMovie} path="/add-movie" />
+```

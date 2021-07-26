@@ -8,3 +8,9 @@
 #menu div {
   margin: 10px;
 }
+
+/* control all anchor tag */
+#menu a {
+  text-decoration: none;
+  color: orange;
+}
