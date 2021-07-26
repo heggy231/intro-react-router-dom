@@ -17,3 +17,7 @@
 - Next, `touch src/components/AddMovie.js`
   - `rafc` for boilerplate for arrow function
 
+- create route (url that only shows addmovie component) for the new `AddMovie` component
+  - inside index.js add Route component with component `AddMovie` with path `/add-movie`.
+  - remember to import `AddMovie` component from `src/components/AddMovie.js` into App.js
+  - finally, go to `http://localhost:3000/add-movie` to see AddMovie component!
