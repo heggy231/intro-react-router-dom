@@ -12,6 +12,8 @@
     </BrowserRouter>
 ```
 
-* remember for path="/" include `exact` attribute for Route does partial matching which causes all path to go to home (root).  Since all path start with /, it will match all routes.
+* remember for `path="/"` include `exact` attribute for Route does partial matching which causes all path to go to home (root).  Since all path start with `/`, it will match all routes.
 
-- /foo renders App component
+- Next, `touch src/components/AddMovie.js`
+  - `rafc` for boilerplate for arrow function
+
