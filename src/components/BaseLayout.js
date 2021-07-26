@@ -1,10 +1,12 @@
 import React from 'react'
 
-const BaseLayout = () => {
+const BaseLayout = (props) => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <header>BaseLayout Header</header>
+      <main>Content goes here!</main>
+      <footer>BaseLayout Footer</footer>
+    </>
   )
 }
 
