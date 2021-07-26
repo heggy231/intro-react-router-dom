@@ -5,7 +5,7 @@ const BaseLayout = (props) => {
   return (
     <>
       <Menu />
-      <main>{props.children}</main>
+      <main>Main Content: {props.children}</main>
       <footer>BaseLayout Footer</footer>
     </>
   )

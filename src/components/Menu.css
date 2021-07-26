@@ -1,0 +1,10 @@
+#menu {
+  background-color: dodgerblue;
+  color: white;
+  display: flex;
+}
+
+/* if find id menu and div nested in there */
+#menu div {
+  margin: 10px;
+}

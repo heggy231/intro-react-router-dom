@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import "./Menu.css";
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   return (
     <>
-      <h1>Nav menu component page!</h1>
+      <div id="menu">
+        <div>
+          <NavLink to="/">Home</NavLink>
+        </div>
+        <div>
+          <NavLink to="/add-movie">Add Movie</NavLink>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default Menu;
