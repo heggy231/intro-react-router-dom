@@ -33,4 +33,15 @@
         <Route component={AddMovie} path="/add-movie" />
       </BaseLayout>
     </BrowserRouter>
+
+  // Then utilize Switch to insert props.children into the base layout Header and Footer
+        <Switch>
+          <Route component={App} path="/" exact />
+          <Route component={AddMovie} path="/add-movie" />
+        </Switch>
+  
 ```
+
+- Next goal: add nav menu to go to `/add-movie` and `/`
+
+1. `touch src/components/Menu.js`
