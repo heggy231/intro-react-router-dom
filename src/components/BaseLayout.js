@@ -8,7 +8,7 @@ const BaseLayout = (props) => {
         <Menu />
       </header>
       <main>{props.children}</main>
-      <footer>Footer</footer>
+      <footer></footer>
     </>
   );
 };

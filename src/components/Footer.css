@@ -1,0 +1,10 @@
+#footerMenu {
+  background-color: rgb(71, 71, 228);
+  color: yellow;
+  display: flex;
+}
+
+#footerMenu div {
+  margin: 10px;
+}
+
