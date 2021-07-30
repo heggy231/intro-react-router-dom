@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Menu from "./Menu";
 
 const BaseLayout = (props) => {
@@ -8,7 +9,9 @@ const BaseLayout = (props) => {
         <Menu />
       </header>
       <main>{props.children}</main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
