@@ -6,6 +6,7 @@ import App from './App';
 import AddMovie from './components/AddMovie';
 import BaseLayout from './components/BaseLayout';
 import ContactUs from './components/ContactUs';
+import MovieDetails from './components/MovieDetails';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
           <Route component={App} path="/" exact />
           <Route component={AddMovie} path="/movie" exact />
           <Route component={ContactUs} path="/contactus" exact />
+          <Route component={MovieDetails} path="/movies/:movieId" exact />
         </Switch>
       </BaseLayout>
     </BrowserRouter>
