@@ -9,12 +9,13 @@ import BaseLayout from './components/BaseLayout';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-
-      <BaseLayout>
-        <Route component={App} path="/" exact />
-        <Route component={AddMovie} path="/movie" exact />
+     {/* baselayout is web header/main/footer outline */}
+      <BaseLayout> 
+        <Switch>
+          <Route component={App} path="/" exact />
+          <Route component={AddMovie} path="/movie" exact />
+        </Switch>
       </BaseLayout>
-
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

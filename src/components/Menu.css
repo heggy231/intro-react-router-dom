@@ -1,0 +1,9 @@
+#menu {
+  background-color: rgb(71, 71, 228);
+  color: yellow;
+  display: flex;
+}
+
+#menu div {
+  margin: 10px;
+}
