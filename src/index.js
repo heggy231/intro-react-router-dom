@@ -15,7 +15,7 @@ ReactDOM.render(
       <BaseLayout> 
         <Switch>
           <Route component={App} path="/" exact />
-          <Route component={AddMovie} path="/movie" exact />
+          <Route component={AddMovie} path="/movies" exact />
           <Route component={ContactUs} path="/contactus" exact />
           <Route component={MovieDetails} path="/movies/:movieId" exact />
         </Switch>

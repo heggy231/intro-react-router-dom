@@ -11,7 +11,7 @@ const Menu = () => {
         </NavLink>
       </div>
       <div>
-        <NavLink to="/movie" className="navlink">
+        <NavLink to="/movies" className="navlink">
           Add Movie
         </NavLink>
       </div>
